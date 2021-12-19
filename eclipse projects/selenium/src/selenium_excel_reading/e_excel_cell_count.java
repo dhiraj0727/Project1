@@ -1,0 +1,22 @@
+package selenium_excel_reading;
+
+import java.io.FileInputStream;
+
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+public class e_excel_cell_count {
+
+	public static void main(String[] args) throws EncryptedDocumentException, IOException {
+
+		FileInputStream myfile = new FileInputStream("d:\\dhiraj.xlsx");
+		int totalcell =WorkbookFactory.create(myfile).getSheet("sheet1").getRow(1).getLastCellNum();
+		System.out.println("number of columns are "+totalcell);
+		
+	// cell - serially 	
+		
+	}
+
+}

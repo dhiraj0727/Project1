@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="chromeTest(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="POM_with_DDF_TestNG.Kite_test">
+        <methods>
+          <include name="validate_kite_userid"/>
+          <include name="logoutkite"/>
+          <include name="closingbrowser"/>
+          <include name="launchbrowser"/>
+          <include name="logintokite"/>
+        </methods>
+      </class> <!-- POM_with_DDF_TestNG.Kite_test -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
